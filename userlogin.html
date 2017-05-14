@@ -1,0 +1,21 @@
+<div class="col-md-12 jumbotron" ng-controller="loginCtrl">
+  <h3>Login Page</h3>
+
+  <form class="form" id="myLogin" action="/">
+	<div class="col-md-4">
+	  <div class="form-group">
+		<input type="text" class="form-control" id="username" ng-model="username" placeholder="username" required=""/>
+	  </div> 
+
+	  <div class="form-group">
+		<input type="password" class="form-control" id="password" ng-model="password" placeholder="password" required=""/>
+	  </div>
+
+	  <div class="form-group">
+		<button type="button" class="btn btn-success" ng-click="submit()">Login</button>
+		<span class="text-danger">{{ error }}</span>
+	  </div>
+
+	</div>
+  </form>
+</div>
